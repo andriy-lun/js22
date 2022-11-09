@@ -1,0 +1,82 @@
+body {
+    background-image: url("wall.jpeg");
+}
+.content {
+    max-width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+.user {
+    display: inline-block;
+    margin: 20px;
+}
+.user img {
+    width: 50px;
+    border-radius: 50%;
+    cursor: progress;
+}
+.user:hover img {
+    transform: scale(1.8);
+    border-radius: 0;
+}
+img {
+    transition: transform 0.25s
+}
+h2 {
+    font-size: 16px;
+    color: gold;
+    letter-spacing: 2px;
+}
+h1 {
+    margin: 30px 0 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: silver;
+}
+
+#pop-wrap {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255 255 255 / 69%);
+    z-index: 100;
+}
+#pop {
+    position: relative;
+    padding: 30px;
+    width: 50vw;
+    min-width: 400px;
+    height: 400px;
+    background: grey;
+    border-radius: 50%;
+    border: 1px solid #dcdada;
+}
+#pop-x {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    font-size: 25px;
+    color: black;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+#pop-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#pop-content img {
+    width: 250px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+}
