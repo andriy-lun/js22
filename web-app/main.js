@@ -1,12 +1,12 @@
 const USERS_URL = "https://api.github.com/users";
 async function getUsers() {
     let res = await fetch(USERS_URL);
-    return await res.json();
+    return res.json();
 }
 
 async function getUserByLogin(login) {
     let res = await fetch(`${USERS_URL}/${login}`);
-    return await res.json();
+    return res.json();
 }
 
 async function renderUsers() {
